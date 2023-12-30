@@ -1,43 +1,39 @@
-.WhyUs {
-   width: 100%;
-   color: #fcfcfc;
-   font-size: 32px;
+.WhyUsHead {
    font-weight: 700;
-   justify-content: center;
    display: flex;
-   padding-bottom: 40px;
-   // padding-top: 100px;
+   justify-content: center;
+   margin-bottom: 40px;
 }
+
+.WhyUs {
+   display: grid;
+   gap: 64px;
+}
+
 .flexDiv {
    display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   gap: 40px;
+   gap: 195px;
+}
+.flexDiv1 {
+   display: flex;
+   gap: 160px;
 }
 .InfoBlock {
    display: flex;
-   align-items: center;
-   margin-bottom: 20px;
 }
-
-.InfoBlockWrapper {
-   width: 570px;
+.textWrapper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
 }
 
 .icon {
    margin-right: 8px;
+   margin-top: 8px;
+   width: 24px;
+   height: 18px;
 }
 
-.textH3 {
+.textWhyUs {
    font-weight: 500;
-   font-size: 24px;
-   color: #fcfcfc;
-}
-
-.text {
-   color: #fcfcfc;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 27px;
-   margin-left: 28px;
 }

@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
+import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import CoolStudio from "../../../assets/coolStudio.png";
 import styles from "../../../scss/partials/coolStudio/_aboutStudio.module.scss";
-
 const AboutStudio: FC = () => {
    const [expanded, setExpanded] = useState(false);
    const [customHeader, setCustomHeader] = useState(false);
@@ -14,7 +14,7 @@ const AboutStudio: FC = () => {
    };
 
    return (
-      <div className="container">
+      <SectionWrapper className="container">
          <h2 className={styles.AboutUsH2}>{customHeader ? "О студии" : "Cool Studio"}</h2>
          <div className={styles.AboutUsWrapper}>
             <div className={styles.TextWrapper}>
@@ -50,7 +50,7 @@ const AboutStudio: FC = () => {
             </div>
             <img className={styles.AboutUsImg} src={CoolStudio} alt="Cool Studio" />
          </div>
-      </div>
+      </SectionWrapper>
    );
 };
 
