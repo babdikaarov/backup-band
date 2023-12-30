@@ -1,14 +1,14 @@
 import CoolShowBand from "../../components/BandComponents/CoolShowBand/CoolShowBand.tsx";
-import Gis2 from "../../components/BandComponents/Gis2/Gis2.tsx";
 import OurTeam from "../../components/BandComponents/OurTeam/OurTeam.tsx";
 import WhyUs from "../../components/BandComponents/WhyUs/WhyUs.tsx";
 import OurClients from "../../components/BandComponents/OurClients/OurClients.tsx";
 import OurEvents from "../../components/BandComponents/OurEvents/OurEvents.tsx";
 import Collaboration from "../../components/BandComponents/Collaboration/Collaboration.tsx";
 import Hero from "../../components/BandComponents/Hero/Hero.tsx";
-import styles from "../../scss/partials/coolBand/_gis2.module.scss";
+import ContactUs from "../../components/BandComponents/ContactUS/ContactUs.tsx";
 
 const CoolBand = () => {
+<<<<<<< HEAD
    return (
       <>
          <Hero />
@@ -34,6 +34,20 @@ const CoolBand = () => {
          />
       </>
    );
+=======
+  return (
+    <>
+      <Hero />
+      <CoolShowBand />
+      <WhyUs />
+      <OurEvents />
+      <OurTeam />
+      <Collaboration />
+      <OurClients />
+      <ContactUs />
+    </>
+  );
+>>>>>>> 7e1fbbb (fix components)
 };
 
 export default CoolBand;
