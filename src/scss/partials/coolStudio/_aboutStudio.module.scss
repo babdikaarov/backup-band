@@ -1,22 +1,16 @@
 .AboutUsWrapper {
    display: flex;
-   justify-content: space-between;
-   gap: 90px;
+   gap: 95px;
 }
 
 .AboutUsH2 {
-   color: #fff;
    font-size: 32px;
-   font-style: normal;
    font-weight: 700;
    margin-bottom: 48px;
    display: flex;
    justify-content: center;
-   letter-spacing: 0.64px;
 }
 .TextWrapper {
-   width: 700px;
-   color: #fff;
    font-size: 19px;
    font-style: normal;
    font-weight: 400;
@@ -29,32 +23,6 @@
    width: 432px;
    height: 288px;
 }
-.ExpandedText {
-   width: 792px;
-   opacity: 0;
-}
-
-.expanded {
-   opacity: 1;
-   transition: opacity 1s cubic-bezier(0.4, 0, 1, 1);
-}
-.ExpandButton {
-   color: #fff;
-}
-
-.MoreButton {
-   opacity: 0.5;
-   text-decoration: underline;
-   margin-left: 2px;
-}
-.CollapseButton {
-   position: absolute;
-   margin-top: 24px;
-   text-decoration: underline;
-   display: flex;
-   justify-content: center;
-   width: 792px;
-}
 
 @keyframes fadeInOut {
    0% {
@@ -66,7 +34,9 @@
       max-height: 1000px;
    }
 }
-
+.ExpandButton {
+   color: #fff;
+}
 .ExpandedText {
    opacity: 0;
    overflow: hidden;
@@ -77,8 +47,20 @@
    opacity: 1;
    max-height: 1000px;
 }
+.MoreButton {
+   opacity: 0.5;
+   margin-left: 2px;
+}
+.CollapseButton {
+   position: absolute;
+   margin-top: 24px;
+   display: flex;
+   justify-content: center;
+   width: 792px;
+}
 
 .CollapseButton,
 .MoreButton {
    transition: 0.5s;
+   text-decoration: underline;
 }
