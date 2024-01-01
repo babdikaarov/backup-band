@@ -1,6 +1,6 @@
-import { getHeroData } from "./temp/getHeroData";
+import { getHeroData } from "../../../tempData/getHeroData";
 import HeroTeamplate from "../../../UI/Hero/HeroTemplate";
-import ReserveUsButton from "../../../UI/Hero/ReserveUsButton";
+import ReserveUsButton from "../../../UI/buttons/ReserveUsButton";
 
 const Hero = () => {
    return (
@@ -11,4 +11,3 @@ const Hero = () => {
 };
 
 export default Hero;
-// <ReserveUsButton whatsapp={contacts} />;

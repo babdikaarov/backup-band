@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import styles from "../../../scss/partials/ui/_NavList.module.scss";
+import styles from "../../../scss/partials/ui/header/_NavList.module.scss";
 
 const BandNavList = () => {
    const { pathname } = useLocation();

@@ -1,39 +1,10 @@
-.WhyUsHead {
-   font-weight: 700;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 40px;
-}
-
-.WhyUs {
+.whyGrid {
+   margin: 0 auto;
    display: grid;
-   gap: 64px;
+   grid-template-columns: 1fr 1fr;
+   gap: 64px 164px;
+   width: calc(100% - 200px);
 }
-
-.flexDiv {
-   display: flex;
-   gap: 195px;
-}
-.flexDiv1 {
-   display: flex;
-   gap: 160px;
-}
-.InfoBlock {
-   display: flex;
-}
-.textWrapper {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
-}
-
-.icon {
-   margin-right: 8px;
-   margin-top: 8px;
-   width: 24px;
-   height: 18px;
-}
-
-.textWhyUs {
-   font-weight: 500;
+.whyGrid h3 {
+   padding-bottom: 1rem;
 }

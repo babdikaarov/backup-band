@@ -1,20 +1,22 @@
 @import "../variables";
 @import "../mixin";
 
-footer {
+.footer {
    display: flex;
-   flex-wrap: wrap;
+   // flex-wrap: wrap;
    justify-content: space-between;
    width: calc(100% - 200px);
    margin: auto;
-   // gap: 100px;
+   gap: 20px;
+   margin-block: 60px;
 }
 
-footer h4 {
+.footer h4 {
    padding-bottom: 10px;
 }
 
 .footerLogos {
+   width: 160px;
    display: flex;
    flex-direction: column;
    gap: 10px;
@@ -32,12 +34,16 @@ footer h4 {
    gap: 0px 25px;
    white-space: nowrap;
 
+   @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+   }
+
    @media screen and (min-width: 1550px) {
       grid-template-columns: repeat(3, 1fr);
    }
-   @media screen and (min-width: 2200px) {
-      grid-template-columns: repeat(4, 1fr);
-   }
+   // @media screen and (min-width: 2200px) {
+   //   grid-template-columns: repeat(4, 1fr);
+   // }
 }
 
 .footerBoxAddress {
@@ -52,6 +58,24 @@ footer h4 {
    white-space: pre;
 }
 
-a:hover {
+.footer a:hover {
    color: $hover_yellow;
+}
+
+.footerSocialPositoin {
+   display: none;
+}
+
+.footerInfo {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+   max-width: 1240px;
+}
+
+@media screen and (min-width: 2000px) {
+   .footerSocialPositoin {
+      display: block;
+   }
 }
