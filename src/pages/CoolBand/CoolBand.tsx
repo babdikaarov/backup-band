@@ -11,7 +11,7 @@ const CoolBand = () => {
   return (
     <>
       <Hero />
-      <CoolShowBand />
+      <About />
       <WhyUs />
       <OurEvents />
       <OurTeam />
