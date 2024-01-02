@@ -33,10 +33,21 @@ const galleryTemp = [
   },
 ];
 
-const getGalleryData = [];
-
-for (let i = 0; i < 20; i++) {
-  getGalleryData.push(...galleryTemp);
+function multi(
+  data: {
+    eventID: number;
+    name: string;
+    date: string;
+    description: string;
+    poster: string;
+    items: { alt: string; src: string; view: string }[];
+  }[],
+) {
+  for (let i = 0; i < 4; i++) {
+    data.push(...data);
+  }
+  return data;
 }
+const getGalleryData = multi(galleryTemp);
 
 export default getGalleryData;
