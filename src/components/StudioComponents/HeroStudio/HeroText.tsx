@@ -1,4 +1,5 @@
 import { FC } from "react";
+import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import styles from "../../../scss/partials/ui/_hero.module.scss";
 
 interface HeroTextProps {
@@ -8,12 +9,12 @@ interface HeroTextProps {
 
 const HeroText: FC<HeroTextProps> = ({ header, paragraph }) => {
    return (
-      <div className="container">
+      <SectionWrapper className={styles.heroStudio}>
          <div className={styles.text}>
             <h1 className={styles.heroH1}>{header}</h1>
             <h6 className={styles.paragraph}>{paragraph}</h6>
          </div>
-      </div>
+      </SectionWrapper>
    );
 };
 

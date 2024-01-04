@@ -1,9 +1,13 @@
+.coolStudio {
+   width: calc(100% - 200px);
+   margin: 0 auto;
+}
 .AboutUsWrapper {
    display: flex;
    gap: 95px;
 }
 
-.AboutUsH2 {
+.coolStudio h2 {
    font-size: 32px;
    font-weight: 700;
    margin-bottom: 48px;

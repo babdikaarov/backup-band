@@ -18,6 +18,10 @@
 }
 //heroStudio
 
+.heroStudio {
+   width: calc(100% - 200px);
+   margin: 0 auto;
+}
 .text {
    position: absolute;
    top: 50%;

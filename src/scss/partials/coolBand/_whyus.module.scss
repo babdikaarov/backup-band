@@ -1,22 +1,14 @@
-.WhyUsHead {
-   font-weight: 700;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 40px;
+.whyUs h2 {
+   font-size: 32px;
+   margin-bottom: 50px;
 }
 
 .WhyUs {
+   width: calc(100% - 200px);
+   margin: 0 auto;
    display: grid;
-   gap: 64px;
-}
-
-.flexDiv {
-   display: flex;
-   gap: 195px;
-}
-.flexDiv1 {
-   display: flex;
-   gap: 160px;
+   gap: 64px 164px;
+   grid-template-columns: 1fr 1fr;
 }
 .InfoBlock {
    display: flex;
