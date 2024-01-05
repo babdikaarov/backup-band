@@ -3,6 +3,8 @@ import cardsData from "../../../tempData/getCollabData";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import CollabCard from "../../../UI/Cards/CollabCard";
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 type Cards = {
    src: Promise<typeof import("*.png")>;
@@ -22,15 +24,18 @@ const Collaboration = () => {
    return (
       <SectionWrapper header={"Коллаборации"} id="collaboration">
          <div className={styles.collabCardsContainer}>
+            <Swiper slidesPerView={4.7}>
             {cards?.map((card, i) => (
-               <CollabCard
-                  key={i}
-                  src={card.src}
-                  alt={card.alt}
-                  firstName={card.firstName}
-                  lastName={card.lastName}
-               ></CollabCard>
+               <SwiperSlide key={i}>
+                  <CollabCard
+                     src={card.src}
+                     alt={card.alt}
+                     firstName={card.firstName}
+                     lastName={card.lastName}
+                  ></CollabCard>
+               </SwiperSlide>
             ))}
+            </Swiper>
             <div className={styles.lastCardPadding}></div>
          </div>
       </SectionWrapper>
