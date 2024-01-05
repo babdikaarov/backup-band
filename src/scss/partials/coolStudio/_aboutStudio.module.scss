@@ -4,7 +4,7 @@
 }
 .AboutUsWrapper {
    display: flex;
-   gap: 95px;
+   gap: 170px;
 }
 
 .coolStudio h2 {
@@ -26,6 +26,7 @@
 .AboutUsImg {
    width: 432px;
    height: 288px;
+   border-radius: 16px;
 }
 
 @keyframes fadeInOut {
