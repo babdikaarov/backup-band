@@ -1,19 +1,7 @@
-.StudentsFeedback {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   // margin: 150px 0;
-   & h1 {
-      color: white;
-      margin-bottom: 100px;
-   }
-}
-
 .StudentsFeedbackSlider {
    width: 1240px;
    height: 583px;
+   margin-left: 100px;
 }
 
 .StudentsFeedbackCard {

@@ -17,15 +17,9 @@ export default (
          lastName: "Волкодав",
       },
       {
-         src: import("/src/assets/collaborationImages/BigBand.png"),
-         alt: "Bishkek Big Band",
-         firstName: "Bishkek Big Band",
-         lastName: "",
-      },
-      {
-         src: import("/src/assets/collaborationImages/Orkestr.png"),
-         alt: "Оркестр театра Оперы и Балета",
-         firstName: "Оркестр театра Оперы и Балета",
+         src: import("/src/assets/collaborationImages/kga.png"),
+         alt: "Симфонический оркестр",
+         firstName: "КГА Симфонический оркестр им.А.Джумахматова",
          lastName: "",
       },
       {
@@ -35,9 +29,15 @@ export default (
          lastName: "",
       },
       {
-         src: import("/src/assets/collaborationImages/kga.png"),
-         alt: "Симфонический оркестр",
-         firstName: "КГА Симфонический оркестр им.А.Джумахматова",
+         src: import("/src/assets/collaborationImages/Orkestr.png"),
+         alt: "Оркестр театра Оперы и Балета",
+         firstName: "Оркестр театра Оперы и Балета",
+         lastName: "",
+      },
+      {
+         src: import("/src/assets/collaborationImages/BigBand.png"),
+         alt: "Bishkek Big Band",
+         firstName: "Bishkek Big Band",
          lastName: "",
       },
    ]);
