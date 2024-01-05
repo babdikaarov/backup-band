@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
-import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
-import CoolStudio from "../../../assets/coolStudio.png";
+import CoolStudio from "../../../assets/about/aboutStudio.jpg";
 import styles from "../../../scss/partials/coolStudio/_aboutStudio.module.scss";
+import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 const AboutStudio: FC = () => {
    const [expanded, setExpanded] = useState(false);
    const [customHeader, setCustomHeader] = useState(false);
@@ -14,11 +14,11 @@ const AboutStudio: FC = () => {
    };
 
    return (
-      <SectionWrapper className={styles.coolStudio}>
-         <h2>{customHeader ? "О студии" : "Cool Studio"}</h2>
+      <SectionWrapper className="container">
+         <h2 className={styles.AboutUsH2}>{customHeader ? "О студии" : "Cool Studio"}</h2>
          <div className={styles.AboutUsWrapper}>
             <div className={styles.TextWrapper}>
-               <p>
+               <span>
                   В сентябре 2022 года наша студия открыла свои <br />
                   двери для всех желающих научиться игре на <br />
                   музыкальных инструментах. <br />
@@ -29,7 +29,7 @@ const AboutStudio: FC = () => {
                   в полноценное музыкальное сообщество, где <br />
                   профессионалы делятся со студентами своим бесценным <br />
                   опытом{points ? "..." : ""}
-               </p>
+               </span>
                {expanded && (
                   <div className={`${styles.ExpandedText} ${expanded ? styles.expanded : ""}`}>
                      <br />

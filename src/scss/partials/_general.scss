@@ -33,12 +33,32 @@ li {
 }
 // sizing
 
+:root {
+   scroll-behavior: smooth;
+}
+.sectionWrapper {
+   scroll-margin-top: 200px;
+}
+
 main {
    max-width: $desktop_width;
-   margin: 150px auto 150px;
+   margin: 110px auto 150px;
    display: flex;
    flex-direction: column;
    gap: 150px;
+}
+// animation of page switch
+.fade {
+   animation: fade 300ms ease-in;
+}
+
+@keyframes fade {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }
 
 // Typography
@@ -87,6 +107,6 @@ h2 {
 
 h1 {
    font-size: 40px;
-   line-height: 150%;
+   line-height: 125%;
    letter-spacing: 0.8px;
 }
