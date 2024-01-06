@@ -30,11 +30,12 @@ const GalleryTemplate: FC<GalleryTemplateProps> = ({ galleryData }) => {
       {events.map((event, i) => (
         <React.Fragment key={event.eventID + i}>
           <div className={styles.galleryCards}>
-            <Link to={`/gallery/${event.eventID}`}>
+            {/* <Link to={`/gallery/${event.eventID}`}> */}
+            <Link to={`/gallery/${i}`}>
               <img src={event.poster} alt={event.name} />
               <div className={styles.galleryCardsContent}>
                 <p>{event.date}</p>
-                <h4>{`Id of event ${event.eventID}`}</h4>
+                <h4>{`Id of event ${`array index ${i}`}`}</h4>
               </div>
             </Link>
           </div>
