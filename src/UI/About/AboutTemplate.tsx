@@ -14,14 +14,11 @@ const AboutTemplate: FC<AboutTemplateProps> = ({ header, poster, text }) => {
       <div className={styles.about}>
         <article className={styles.article}>
           <div className={styles.truncate}>
-            {text
-              .split(".")
-              .slice(0, -1)
-              .map((newLine, i) => (
-                <p key={i} className={styles.text}>
-                  {newLine + "."}
-                </p>
-              ))}
+            {text.split(/(?<=[.!?])\s+/).map((newLine, i) => (
+              <p key={i} className={styles.text}>
+                {newLine}
+              </p>
+            ))}
           </div>
         </article>
         <img src={poster} alt="About Poster" />

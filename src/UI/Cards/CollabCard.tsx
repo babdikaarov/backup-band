@@ -1,27 +1,26 @@
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import styles from "../../scss/partials/ui/cards/_collabCard.module.scss";
 interface CollabCardProps extends React.HTMLAttributes<HTMLDivElement> {
-   src: Promise<typeof import("*.png")>;
-   alt: string;
-   firstName: string;
-   lastName: string;
+  src: string;
+  alt: string;
+  firstName: string;
+  lastName: string;
+  view: string;
 }
 
-const CollabCard: FC<CollabCardProps> = ({ src, alt, firstName, lastName, ...props }) => {
-   const [resolvedSrc, setResolvedSrc] = useState<string | undefined>(undefined);
-
-   useEffect(() => {
-      src.then((importedSrc) => setResolvedSrc(importedSrc.default));
-   }, [src]);
-
-   return (
+const CollabCard: FC<CollabCardProps> = ({ src, alt, firstName, lastName, view = "portrait", ...props }) => {
+  return (
+    <div>
       <div className={styles.collabCardContainer} {...props}>
-         <img src={resolvedSrc} alt={alt} className={styles.collabCard} />
-         <p>
-            {firstName} {lastName}
-         </p>
+        <div className={styles.collabCard + " " + styles[view]}>
+          <img src={src} alt={alt} />
+        </div>
+        <p>
+          {firstName} {lastName}
+        </p>
       </div>
-   );
+    </div>
+  );
 };
 
 export default CollabCard;
