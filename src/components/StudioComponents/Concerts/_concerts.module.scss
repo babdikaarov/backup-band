@@ -16,11 +16,15 @@
 // }
 
 .ConcertSlider {
-   margin-left: 170px;
+   position: relative;
+   margin: 0 auto;
    width: 82%;
 }
 
-.images {
+
+.concertImg {
+   width: 380px;
+   height: 200px;
    border-radius: 10px;
 }
 
@@ -30,11 +34,60 @@
    transform: translate(230%, 80%);
 }
 
+.Summer {
+   color: #FFF;
+
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   transform: translate(0px, -139px);
+}
+
+.Bishkek {
+   color: #FFF;
+
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   transform: translate(0px, -139px);
+}
+
+.december {
+   color: #FFF;
+
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   transform: translate(0px, -120px);
+
+}
+
+.text1 {
+   color: #fff;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 700;
+   margin-bottom: 48px;
+   display: flex;
+   justify-content: center;
+   letter-spacing: 0.64px;
+}
+
+
 .watchmore {
    font-family: "Montserrat Alternates", sans-serif;
    color: white;
    margin-top: 50px;
-   margin-left: 1050px;
+   margin-left: 1000px;
 }
 
 .LeftSwip {
@@ -53,10 +106,11 @@
    z-index: 10;
 }
 
+
 .RightSwip {
    position: absolute;
    right: 30px;
-   top: 35%;
+   top: 130%;
    transform: translate(-230%, 1100%);
    width: 30px;
    height: 30px;
@@ -71,9 +125,13 @@
 }
 
 .RightSwip {
+
    right: 0;
+   rotate: 180deg;
 }
 
 .LeftSwip {
-   left: 0;
+   left: -166px;
+   top: -245px;
+
 }
