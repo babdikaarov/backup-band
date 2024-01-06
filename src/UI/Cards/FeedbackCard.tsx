@@ -1,4 +1,4 @@
-import styles from "../../scss/partials/coolStudio/_studentsFeedback.module.scss";
+import styles from "../../components/StudioComponents/StudentsFeedback/_studentsFeedback.module.scss";
 
 type CardProps = {
    img: string;

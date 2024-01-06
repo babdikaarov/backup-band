@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { NavLink } from "react-router-dom";
-import styles from "../../scss/partials/ui/_logo.module.scss";
+import styles from "./_logo.module.scss";
 import blogo from "/logo/blogo.svg";
 import slogo from "/logo/slogo.svg";
 

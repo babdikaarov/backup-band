@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../../scss/partials/ui/buttons/_contactUsButton.module.scss";
+import styles from "./buttons/_contactUsButton.module.scss";
 import phone from "../../assets/icons/phone";
 type whatsapp = {
    whatsapp: string;

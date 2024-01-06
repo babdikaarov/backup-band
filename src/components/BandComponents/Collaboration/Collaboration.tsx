@@ -1,4 +1,4 @@
-import styles from "../../../scss/partials/coolBand/_collaboration.module.scss";
+import styles from "./_collaboration.module.scss";
 import cardsData from "../../../tempData/getCollabData";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import CollabCard from "../../../UI/Cards/CollabCard";

@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import styles from "../../scss/partials/ui/cards/_coursesCard.module.scss";
+import styles from "./cards/_coursesCard.module.scss";
 
 interface CoursesCardProps {
    src: Promise<typeof import("*.svg")>;

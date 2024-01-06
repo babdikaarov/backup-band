@@ -1,6 +1,6 @@
 import { FC } from "react";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
-import styles from "../../../scss/partials/ui/_hero.module.scss";
+import styles from "../../../UI/Hero/_hero.module.scss";
 
 interface HeroTextProps {
    header: string;

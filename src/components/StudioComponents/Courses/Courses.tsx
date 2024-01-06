@@ -1,7 +1,7 @@
 import coursesData from "../../../tempData/getCoursesList";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import CoursesCard from "../../../UI/Cards/CoursesCard";
-import styles from "../../../scss/partials/coolStudio/_courses.module.scss";
+import styles from "./_courses.module.scss";
 import { useEffect, useState } from "react";
 
 type Data = {

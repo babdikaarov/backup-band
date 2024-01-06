@@ -1,6 +1,6 @@
 // import React from "react";
 import { FC } from "react";
-import styles from "../../../scss/partials/ui/gallery/_modal.module.scss";
+import styles from "../gallery/_modal.module.scss";
 import { arrowLeft } from "./arrowLeft";
 import { arrowRight } from "./arrowRight";
 

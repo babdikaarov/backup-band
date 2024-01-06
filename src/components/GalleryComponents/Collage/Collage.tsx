@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import GalleryCollage from "../../../UI/Gallery/GalleryCollage";
 import getGalleryData from "../../../tempData/getGalleyData";
 import returnIcon from "../../../assets/icons/return";
-import styles from "../../../scss/partials/gallery/_collage.module.scss";
+import styles from "./_collage.module.scss";
 
 interface GalleryItem {
   alt: string;

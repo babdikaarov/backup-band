@@ -5,7 +5,7 @@ import StudensImg3 from "../../../assets/coolstudio/Image.png";
 import StudensImg4 from "../../../assets/coolstudio/Image.png";
 import StudensImg5 from "../../../assets/coolstudio/Image.png";
 import VideoImg from "../../../assets/coolstudio/Frame 427319234.png";
-import styles from "../../../scss/partials/coolStudio/_ourstudents.module.scss";
+import styles from "./_ourstudents.module.scss";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";

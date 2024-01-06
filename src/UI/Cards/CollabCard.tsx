@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../../scss/partials/ui/cards/_collabCard.module.scss";
+import styles from "./cards/_collabCard.module.scss";
 interface CollabCardProps extends React.HTMLAttributes<HTMLDivElement> {
   src: string;
   alt: string;

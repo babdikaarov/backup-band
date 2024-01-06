@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import CoolStudio from "../../../assets/about/aboutStudio.jpg";
-import styles from "../../../scss/partials/coolStudio/_aboutStudio.module.scss";
+import styles from "./_aboutStudio.module.scss";
 const AboutStudio: FC = () => {
   const [expanded, setExpanded] = useState(false);
   const [customHeader, setCustomHeader] = useState(false);

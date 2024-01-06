@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import styles from "../../scss/partials/ui/_hero.module.scss";
+import styles from "./_hero.module.scss";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import HeroText from "./HeroText";
 

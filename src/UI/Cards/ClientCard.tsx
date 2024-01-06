@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../../scss/partials/ui/cards/_clientCard.module.scss";
+import styles from "./cards/_clientCard.module.scss";
 
 interface ClientCardProps {
   card: {

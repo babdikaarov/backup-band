@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import TwoGis from "../map/TwoGis";
-import styles from "../../scss/partials/ui/_contactUsTemplate.module.scss";
+import styles from "./_contactUsTemplate.module.scss";
 
 interface ContactUsTemplateProps {
    heading: string;

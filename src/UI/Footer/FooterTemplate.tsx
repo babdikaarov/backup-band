@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../../scss/partials/ui/_footer.module.scss";
+import styles from "./_footer.module.scss";
 import FooterBox from "./footerBox/FooterBox";
 import Logo from "../Logo/Logo";
 import SocialLinks from "../socialLinks/SocialLinks";

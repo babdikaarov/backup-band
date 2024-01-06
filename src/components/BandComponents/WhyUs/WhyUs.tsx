@@ -1,6 +1,6 @@
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";
 import icon from "../../../assets/Tick.png";
-import styles from "../../../scss/partials/coolBand/_whyus.module.scss";
+import styles from "./_whyus.module.scss";
 
 const InfoBlock: React.FC<{ title: string; text: string }> = ({ title, text }) => (
    <div className={styles.InfoBlock}>

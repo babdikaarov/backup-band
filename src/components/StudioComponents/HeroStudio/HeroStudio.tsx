@@ -1,7 +1,7 @@
 import HeroTemplate from "../../../UI/Hero/HeroTemplate";
 import SignLesson from "../../../UI/Hero/SignLessonButton";
 import { getHeroData } from "../../../components/BandComponents/Hero/temp/getHeroData";
-import "../../../scss/partials/ui/_hero.module.scss";
+import "../../../UI/Hero/_hero.module.scss";
 import HeroText from "./HeroText";
 
 const HeroStudio = () => {

@@ -2,7 +2,7 @@ import { FC } from "react";
 import Logo from "../Logo/Logo";
 import SocialLinks from "../socialLinks/SocialLinks";
 import TopButtons from "./topButtons/TopButtons";
-import styles from "../../scss/partials/ui/header/_header.module.scss";
+import styles from "./header/_header.module.scss";
 type lyrics = {
   lyrics: string;
 };

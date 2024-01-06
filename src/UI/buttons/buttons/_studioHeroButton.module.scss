@@ -1,5 +1,5 @@
-@import "../../mixin";
-@import "../../variables";
+@import "../../../scss/partials/mixin";
+@import "../../../scss/partials/variables";
 
 .button {
    @include buttons($fill: $color_white, $color: $color_white, $background: $color_blue, $border: $color_blue);

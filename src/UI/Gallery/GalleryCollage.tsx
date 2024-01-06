@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import styles from "../../scss/partials/ui/gallery/_galleryCollage.module.scss";
+import styles from "./gallery/_galleryCollage.module.scss";
 import Modal from "./modal/Modal";
 
 type Item = {

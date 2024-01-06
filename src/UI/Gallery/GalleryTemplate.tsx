@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "../../scss/partials/ui/gallery/_gallery.module.scss";
+import styles from "./gallery/_gallery.module.scss";
 
 type GalleryTemplateProps = {
   galleryData: {

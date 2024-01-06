@@ -1,4 +1,4 @@
-import styles from "../../../scss/partials/coolStudio/_studentsFeedback.module.scss";
+import styles from "./_studentsFeedback.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SectionWrapper from "../../../UI/SectionWrapper/SectionWrapper";

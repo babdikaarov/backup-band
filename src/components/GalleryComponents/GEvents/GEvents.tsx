@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import image from "../../../assets/Image.png";
-import styles from "../../../scss/partials/gallery/_gevents.module.scss";
+import styles from "./_gevents.module.scss";
 const GEvents = () => {
 
    const imgArray = [image, image, image, image, image, image, image, image, image, image, image, image];

@@ -1,4 +1,4 @@
-import styles from "../../scss/partials/gallery/_collage.module.scss";
+import styles from "../../components/GalleryComponents/Collage/_collage.module.scss";
 import img1 from "../../assets/Collage(.png";
 import img2 from "../../assets/Collage(1).png";
 import img3 from "../../assets/Collage(2).png";

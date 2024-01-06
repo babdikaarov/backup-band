@@ -8,7 +8,7 @@ import ConcertImg6 from "../../../assets/coolstudio/карта концерта.
 import ConcertImg7 from "../../../assets/coolstudio/карта концерта.png";
 import ConcertImg8 from "../../../assets/coolstudio/карта концерта.png";
 import ConcertImg9 from "../../../assets/coolstudio/карта концерта.png";
-import styles from "../../../scss/partials/coolStudio/_concerts.module.scss";
+import styles from "./_concerts.module.scss";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";

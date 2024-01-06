@@ -1,5 +1,5 @@
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
-import styles from "../../scss/partials/ui/_aboutTemplate.module.scss";
+import styles from "./_aboutTemplate.module.scss";
 import { FC } from "react";
 
 interface AboutTemplateProps {
