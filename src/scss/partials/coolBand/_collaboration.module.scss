@@ -1,12 +1,18 @@
-.collabCardsContainer {
-   height: 430px;
-   margin-left: 100px;
-   display: flex;
-   gap: 24px;
-   overflow-x: scroll;
-   border-start-start-radius: 15px;
-   border-end-start-radius: 15px;
+.collabContainer {
+  margin-left: 100px;
+  min-height: 410px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-start-start-radius: 15px;
+  border-end-start-radius: 15px;
 }
-.collabCardsContainer::-webkit-scrollbar {
-   display: none;
+
+.collabContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.lastCardPadding {
+  width: 100px;
 }

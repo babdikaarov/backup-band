@@ -1,26 +1,20 @@
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import styles from "../../scss/partials/ui/cards/_clientCard.module.scss";
 
 interface ClientCardProps {
-   card: {
-      src: Promise<typeof import("*.png")>;
-      alt: string;
-   };
+  card: {
+    src: string;
+    alt: string;
+  };
 }
 
 const ClientCard: FC<ClientCardProps> = ({ card }) => {
-   const [resolvedSrc, setResolvedSrc] = useState<string | undefined>(undefined);
+  function checkFileExtension(src: string): string {
+    const regex = /\.png$/;
+    return src && regex.test(src) ? styles.png : styles.NoPng;
+  }
 
-   useEffect(() => {
-      card.src.then((importedSrc) => setResolvedSrc(importedSrc.default));
-   }, [card.src]);
-
-   function checkFileExtension(src: string | undefined): string {
-      const regex = /\.png$/;
-      return src && regex.test(src) ? styles.png : styles.NoPng;
-   }
-
-   return <img className={styles.clientCard + checkFileExtension(resolvedSrc)} src={resolvedSrc} alt={card.alt} />;
+  return <img className={styles.clientCard + checkFileExtension(card.src)} src={card.src} alt={card.alt} />;
 };
 
 export default ClientCard;
